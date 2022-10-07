@@ -6,13 +6,16 @@ function App() {
   return (
     <div className="App">
       <div className="AppLanding">
-        <header>
+        <header className="LandingContent">
           <p>Fresh, locally raised Prince Edward Island Meats.</p>
           <div className="ButtonContainer">
             <button className="Primary">View cuts</button>
             <button className="Secondary">Gallery</button>
           </div>
-          <button className="WhoAreWeButton Secondary">Who are we?</button>
+          {/* TODO: fix absolute positioning of button but keep it at the bottom */}
+          <div className="WhoAreWeButtonContainer">
+            <button className="WhoAreWeButton Secondary">Who are we?</button>
+          </div>
         </header>
       </div>
     </div>
