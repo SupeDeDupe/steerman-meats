@@ -1,0 +1,47 @@
+
+.App {
+  text-align: left;
+  /* background-image: url("./images/image1.png"), url("./images/image2.png"), url("./images/image3.png"); */
+}
+
+.App-landing{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: calc(50px + 2vmin);
+  color: #fff;
+  padding: 0 10vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/image1.png");
+
+  .button-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+button{
+  padding: 10px 24px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.primary {
+  background: #BA1F34;
+  border: 1px solid #BA1F34;
+  &:hover{
+    border: 1px solid #fff;
+  }
+}
+.secondary {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid #fff;
+  &:hover {
+    background: rgba(255, 255, 255, 0.30);
+
+  }
+}
