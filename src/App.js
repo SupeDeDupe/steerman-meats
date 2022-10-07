@@ -5,13 +5,14 @@ import "./App.scss";
 function App() {
   return (
     <div className="App">
-      <div className="App-landing">
+      <div className="AppLanding">
         <header>
           <p>Fresh, locally raised Prince Edward Island Meats.</p>
-          <div className="button-container">
-            <button className="primary">View cuts</button>
-            <button className="secondary">Gallery</button>
+          <div className="ButtonContainer">
+            <button className="Primary">View cuts</button>
+            <button className="Secondary">Gallery</button>
           </div>
+          <button className="WhoAreWeButton Secondary">Who are we?</button>
         </header>
       </div>
     </div>
