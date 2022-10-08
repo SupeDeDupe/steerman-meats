@@ -6,8 +6,10 @@ function App() {
   return (
     <div className="App">
       <div className="AppLanding">
-        <header className="LandingContent">
-          <p>Fresh, locally raised Prince Edward Island Meats.</p>
+        <div className="LandingContent">
+          <header>
+            <h1>Fresh, locally raised Prince Edward Island Meats.</h1>
+          </header>
           <div className="ButtonContainer">
             <button className="Primary">View cuts</button>
             <button className="Secondary">Gallery</button>
@@ -16,7 +18,7 @@ function App() {
           <div className="WhoAreWeButtonContainer">
             <button className="WhoAreWeButton Secondary">Who are we?</button>
           </div>
-        </header>
+        </div>
       </div>
     </div>
   );
