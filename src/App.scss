@@ -3,12 +3,15 @@
   /* background-image: url("./images/image1.png"), url("./images/image2.png"), url("./images/image3.png"); */
   color: #fff;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 h1, h2, h3 {
   font-family: 'Jomolhari';
   font-style: normal;
   font-weight: 400;
-  margin: 0;
+  margin: 20px 0;
   text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.35);
 }
 h1{
@@ -21,9 +24,12 @@ h2{
 }
 
 .FullScreenBackground{
-  height: 100vh;
-  gap: 30px;
+  min-height: 100vh;
+  // gap: 30px;
   padding: 0 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .ButtonContainer{
     display: flex;
@@ -32,57 +38,18 @@ h2{
   }
 }
 
-.AppLandingTop{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/steak_on_ice.png");
-
-  .WhoAreWeButtonContainer{
-    position: relative;
-    width:100%;
-    button{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      float: right;
-    }
-  }
-}
-.AppLandingMiddle{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/old_farm.png");
-  text-align: right;
-
-  ul {
-      font-family: 'Open Sans', sans-serif;
-      list-style: outside;
-      list-style-image: linear-gradient(to left bottom, #D94C5F, #D94C5F);
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 30px;
-      direction: rtl;
-      li{
-        margin: 5px 0;
-      }
-    }
-}
-
-button{
-  padding: 10px 24px;
-  color: #fff;
-  font-size: 24px;
-  font-family: 'Jomolhari';
+a.Button{
   cursor: pointer;
   box-sizing: border-box;
   background: transparent;
-  &:hover {
-    text-decoration: underline;
-  }
+  margin: 30px 0;
+  padding: 10px 24px;
+
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Jomolhari';
+  text-align: center;
+  text-decoration: none;
 
   &.Primary {
     background: #BA1F34;

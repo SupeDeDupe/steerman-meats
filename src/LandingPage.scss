@@ -1,0 +1,43 @@
+#AppLandingTop {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/steak_on_ice.png");
+
+    .WhoAreWeLinkContainer {
+        position: relative;
+        width: 100%;
+
+        a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            float: right;
+        }
+    }
+}
+
+#AppLandingMiddle {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/old_farm.png");
+    text-align: right;
+
+    ul {
+        font-family: 'Open Sans', sans-serif;
+        list-style: outside;
+        list-style-image: linear-gradient(to left bottom, #D94C5F, #D94C5F);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        direction: rtl;
+
+        li {
+            margin: 5px 0;
+        }
+    }
+}
+
+#AppLandingBottom {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/aerial_road.png");
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+}
