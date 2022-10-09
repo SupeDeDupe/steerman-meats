@@ -1,38 +1,46 @@
 
-// .App {
-//   /* background-image: url("./images/image1.png"), url("./images/image2.png"), url("./images/image3.png"); */
-// }
-
-h1{
-  font-size: calc(50px + 2vmin);
+.App {
+  /* background-image: url("./images/image1.png"), url("./images/image2.png"), url("./images/image3.png"); */
+  color: #fff;
 }
 
-.AppLanding{
-  text-align: left;
-  position: relative;
+h1, h2, h3 {
+  font-family: 'Jomolhari';
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.35);
+}
+h1{
+  font-size: calc(50px + 2vmin);
+  line-height: 15vmin;
+}
+h2{
+  font-size: calc(30px + 2vmin);
+  line-height: 12vmin;
+}
+
+.FullScreenBackground{
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #fff;
+  gap: 30px;
   padding: 0 10vw;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/steak_on_ice.png");
 
-  .LandingContent{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-  }
   .ButtonContainer{
     display: flex;
     flex-direction: row;
     gap: 20px;
   }
+}
+
+.AppLandingTop{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/steak_on_ice.png");
+
   .WhoAreWeButtonContainer{
     position: relative;
     width:100%;
-    height: 100%;
     button{
       // display: block;
       // margin: auto 0 0 auto;
@@ -45,7 +53,28 @@ h1{
     }
   }
 }
+.AppLandingMiddle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/old_farm.png");
+  text-align: right;
+  // TODO: align the button container right
 
+  ul {
+      font-family: 'Open Sans', sans-serif;
+      list-style: outside;
+      list-style-image: linear-gradient(to left bottom, #D94C5F, #D94C5F);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      direction: rtl;
+      li{
+        margin: 5px 0;
+      }
+    }
+}
 
 button{
   padding: 10px 24px;
@@ -54,6 +83,9 @@ button{
   cursor: pointer;
   box-sizing: border-box;
   background: transparent;
+  &:hover {
+    text-decoration: underline;
+  }
 
   &.Primary {
     background: #BA1F34;
@@ -74,4 +106,11 @@ button{
 
 p{
   margin: 0;
+}
+
+.right{
+  justify-content: right;
+}
+.left{
+  justify-content: left;
 }
