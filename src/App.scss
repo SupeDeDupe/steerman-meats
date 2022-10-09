@@ -42,14 +42,11 @@ h2{
     position: relative;
     width:100%;
     button{
-      // display: block;
-      // margin: auto 0 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       float: right;
-      // margin-left: auto;
-      // margin-right: 0;
-      // position: absolute;
-      // bottom: 0;
-      // right: 0;
     }
   }
 }
@@ -59,7 +56,6 @@ h2{
   justify-content: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/old_farm.png");
   text-align: right;
-  // TODO: align the button container right
 
   ul {
       font-family: 'Open Sans', sans-serif;
@@ -80,6 +76,7 @@ button{
   padding: 10px 24px;
   color: #fff;
   font-size: 24px;
+  font-family: 'Jomolhari';
   cursor: pointer;
   box-sizing: border-box;
   background: transparent;

@@ -1,4 +1,5 @@
 import "./App.scss";
+import {ReactComponent as ArrowDown} from "./arrow_down.svg"
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
             <button className="Secondary">Gallery</button>
           </div>
           <div className="WhoAreWeButtonContainer">
-            <button className="WhoAreWeButton Secondary">Who are we?</button>
+            <button className="WhoAreWeButton Secondary"><span>Who are we?</span><ArrowDown style={{padding: "0 10px"}}/> </button>
           </div>
       </div>
       <div id="AppLandingMiddle" className="AppLandingMiddle FullScreenBackground">
