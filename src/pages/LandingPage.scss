@@ -1,5 +1,6 @@
+
 #AppLandingTop {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/steak_on_ice.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/steak_on_ice.png");
 
     .WhoAreWeLinkContainer {
         position: relative;
@@ -16,7 +17,7 @@
 }
 
 #AppLandingMiddle {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/old_farm.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/old_farm.png");
     text-align: right;
 
     ul {
@@ -36,7 +37,7 @@
 }
 
 #AppLandingBottom {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/aerial_road.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/aerial_road.png");
     text-align: center;
     justify-content: flex-start;
     align-items: center;

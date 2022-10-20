@@ -1,5 +1,5 @@
 import "./LandingPage.scss";
-import { ReactComponent as ArrowDown } from "./arrow_down.svg";
+import { ReactComponent as ArrowDown } from "../svgs/arrow_down.svg";
 import { AppFooter } from "../components/AppFooter";
 import { DoubleLinkSet, StyledLink } from "../components/DoubleLinkSet";
 import styled from "styled-components";
