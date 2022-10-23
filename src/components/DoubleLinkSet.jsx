@@ -9,10 +9,18 @@ export function DoubleLinkSet({
 }) {
   return (
     <StyledContainer positionRight={positionRight}>
-      <StyledLink href={primaryLinkHref} className="Primary Button">
+      <StyledLink
+        aria-label={primaryLinkLabel}
+        href={primaryLinkHref}
+        className="Primary Button"
+      >
         {primaryLinkLabel}
       </StyledLink>
-      <StyledLink href={secondaryLinkHref} className="Secondary Button">
+      <StyledLink
+        aria-label={secondaryLinkLabel}
+        href={secondaryLinkHref}
+        className="Secondary Button"
+      >
         {secondaryLinkLabel}
       </StyledLink>
     </StyledContainer>
